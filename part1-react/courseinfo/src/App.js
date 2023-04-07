@@ -4,10 +4,10 @@ const Header = (props) => {
   return <h1>{props.course}</h1>
 }
 
-const Parts = (props) => {
+const Part = (props) => {
     console.log(props)
   return  <p>
-        {props.parts} {props.exercises}
+        {props.part} {props.exercises}
   </p>
 }
 
@@ -15,9 +15,9 @@ const Content = (props) => {
   console.log(props)
   return <div>
 
-      <Parts part={props.parts[0].name} exercises={props.parts[0].exercises}/>
-      <Parts part={props.parts[1].name} exercises={props.parts[1].exercises}/>
-      <Parts part={props.parts[2].name} exercises={props.parts[2].exercises}/>
+      <Part part={props.part[0].name} exercises={props.part[0].exercises}/>
+      <Part part={props.part[1].name} exercises={props.part[1].exercises}/>
+      <Part part={props.part[2].name} exercises={props.part[2].exercises}/>
 
   </div>
 
@@ -27,7 +27,7 @@ const Total = (props) => {
   console.log(props)
   return <div>
     Total amonut: 
-    <Parts exercises={props.part[0].exercises + props.part[1].exercises + props.part[2].exercises}/>
+    <Part exercises={props.part[0].exercises + props.part[1].exercises + props.part[2].exercises}/>
     
   </div>
 
@@ -56,8 +56,8 @@ const App = () => {
     <div>
 
       <Header course={course}/>
-      <Content parts={parts}/>
-      <Total parts={parts}/>
+      <Content part={parts}/>
+      <Total part={parts}/>
       ...
    
     </div>
