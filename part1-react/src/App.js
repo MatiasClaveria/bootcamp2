@@ -10,10 +10,6 @@ function App() {
 
   return (
     <div className="App">
-      <Mensaje color='green' message='Estamos trabajando'/>
-      <Mensaje color='green' message='Estamos trabajando'/>
-      <Mensaje color='green' message='Estamos trabajando'/>
-      <Mensaje color='green' message='Estamos trabajando'/>
       <Mensaje color='red' message='En un curso'/>
       <Mensaje color='yellow' message='Des react'/>
       <Description />
