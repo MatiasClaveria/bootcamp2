@@ -3,7 +3,7 @@ import Mensaje from './Mensaje';
 
 const Description = () => {
   
-  return <h2>Esta fue la descripcion</h2>
+  return <h2>Esta es otra prueba con GIT</h2>
 }
 
 function App() {
